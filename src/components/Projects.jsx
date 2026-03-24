@@ -72,7 +72,7 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-black/20 opacity-0 transition hover:opacity-100"></div>
               </div>
 
-              <div className="flex flex-grow flex-col p-6">
+              <div className="flex grow flex-col p-6">
                 <h3 className="mb-3 text-2xl font-semibold text-white">
                   {project.title}
                 </h3>
