@@ -39,7 +39,7 @@ const projects = [
       "A personal developer portfolio built to showcase projects, technical skills, and contact information in a modern one-page experience.",
     image: portfolioImage,
     tech: ["React", "Vite", "Tailwind CSS"],
-    liveLink: "#",
+    liveLink: "https://personal-portfolio-black-rho-43.vercel.app/",
     githubLink: "https://github.com/aparedesp2003/personal-portfolio",
   },
 ];
@@ -69,13 +69,13 @@ const Projects = () => {
               key={project.title}
               className="flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-lg transition duration-300 hover:-translate-y-2 hover:border-sky-400/30"
             >
-              <div className="h-56 w-full overflow-hidden">
+              <div className="relative h-56 w-full overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="h-full w-full object-cover object-top transition duration-500 hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/20 opacity-0 transition hover:opacity-100"></div>
+                <div className="pointer-events-none absolute inset-0 bg-black/20 opacity-0 transition hover:opacity-100"></div>
               </div>
 
               <div className="flex grow flex-col p-6">
@@ -99,25 +99,29 @@ const Projects = () => {
                 </div>
 
                 <div className="mt-auto flex flex-wrap gap-4">
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 rounded-full bg-sky-400 px-5 py-2.5 font-semibold text-slate-950 transition hover:scale-105"
-                  >
-                    <FaExternalLinkAlt />
-                    Live Demo
-                  </a>
+                  {project.liveLink && (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2 rounded-full bg-sky-400 px-5 py-2.5 font-semibold text-slate-950 transition hover:scale-105"
+                    >
+                      <FaExternalLinkAlt />
+                      Live Demo
+                    </a>
+                  )}
 
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 rounded-full border border-white/20 px-5 py-2.5 font-semibold text-white transition hover:border-sky-400 hover:text-sky-400"
-                  >
-                    <FaGithub />
-                    GitHub
-                  </a>
+                  {project.githubLink && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2 rounded-full border border-white/20 px-5 py-2.5 font-semibold text-white transition hover:border-sky-400 hover:text-sky-400"
+                    >
+                      <FaGithub />
+                      GitHub
+                    </a>
+                  )}
                 </div>
               </div>
             </article>
