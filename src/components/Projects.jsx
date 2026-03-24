@@ -1,4 +1,5 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 import weatherImage from "../assets/BackEnd-Developer-2.jpg";
 import cultureCompassImage from "../assets/GradutionPicture.jpg";
@@ -46,8 +47,14 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="px-6 py-28">
-      <div className="mx-auto max-w-6xl">
+    <section id="projects" className="px-6 py-20 md:py-28">
+      <motion.div
+        className="mx-auto max-w-6xl"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="mb-16">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
             Projects
@@ -117,7 +124,7 @@ const Projects = () => {
             </article>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

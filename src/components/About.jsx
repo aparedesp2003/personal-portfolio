@@ -1,4 +1,5 @@
 import profileImage from "../assets/LinkedInPicture 2.0.JPG";
+import { motion } from "framer-motion";
 
 const techStack = [
   "React",
@@ -15,30 +16,34 @@ const techStack = [
 
 const About = () => {
   return (
-    <section id="about" className="px-6 py-28">
-      <div className="mx-auto max-w-6xl">
+    <section id="about" className="px-6 py-20 md:py-28">
+      <motion.div
+        className="mx-auto max-w-6xl"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="mb-16">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
             About Me
           </p>
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">
+          <h2 className="text-2xl font-bold leading-tight text-white sm:text-4xl">
             A developer focused on building clean and practical web experiences.
           </h2>
         </div>
 
         <div className="grid gap-16 md:grid-cols-[320px_1fr] md:items-start">
-          {/* Profile Image */}
           <div className="flex justify-center md:justify-start">
             <div className="rounded-3xl bg-white/5 p-3 shadow-xl">
               <img
                 src={profileImage}
                 alt="Andres Paredes"
-                className="h-105 w-[320px] rounded-2xl object-cover transition duration-300 hover:scale-105"
+                className="h-[420px] w-[320px] rounded-2xl object-cover transition duration-300 hover:scale-105"
               />
             </div>
           </div>
 
-          {/* About Text */}
           <div>
             <p className="mb-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
               I’m Andres Paredes, a Software Developer with a strong interest in
@@ -56,7 +61,6 @@ const About = () => {
               experiences.
             </p>
 
-            {/* Tech Stack */}
             <div>
               <h3 className="mb-5 text-xl font-semibold text-white">
                 Tech Stack
@@ -75,7 +79,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

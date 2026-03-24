@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex min-h-screen items-center justify-center px-6"
+      className="flex min-h-[90vh] items-center px-6 pt-20 pb-10 md:min-h-screen"
     >
       <div className="mx-auto max-w-4xl text-center">
         <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-sky-400">
@@ -16,9 +16,8 @@ const Hero = () => {
         </h1>
 
         <p className="mx-auto mb-8 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
-          I’m Andres Paredes, a Software Developer focused on creating clean
-          interfaces and practical digital solutions using React, JavaScript,
-          and modern web technologies.
+          I’m Andres Paredes, a Software Developer focused on building modern web applications 
+          using React, JavaScript, and .NET technologies.
         </p>
 
         <div className="mb-8 flex justify-center gap-6 text-2xl text-slate-300">

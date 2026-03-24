@@ -1,9 +1,16 @@
 import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <section id="contact" className="px-6 py-28">
-      <div className="mx-auto max-w-5xl">
+    <section id="contact" className="px-6 py-20 md:py-28">
+      <motion.div
+        className="mx-auto max-w-6xl"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="mb-16 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
             Contact
@@ -19,7 +26,7 @@ const Contact = () => {
 
         <div className="grid gap-6 md:grid-cols-3">
           <a
-            href="mailto:your-email@gmail.com"
+            href="mailto:aaparedesp@outlook.com"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 text-center shadow-lg transition duration-300 hover:-translate-y-2 hover:border-sky-400/30"
           >
             <div className="mb-4 flex justify-center text-3xl text-sky-400">
@@ -55,7 +62,7 @@ const Contact = () => {
             <p className="text-slate-300">View my repositories</p>
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

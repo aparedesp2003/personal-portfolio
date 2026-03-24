@@ -21,6 +21,8 @@ import {
   SiPostman,
 } from "react-icons/si";
 
+import { motion } from "framer-motion";
+
 const skillCategories = [
   {
     title: "Frontend",
@@ -65,8 +67,14 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="px-6 py-28">
-      <div className="mx-auto max-w-6xl">
+    <section id="skills" className="px-6 py-20 md:py-28">
+      <motion.div
+        className="mx-auto max-w-6xl"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="mb-16">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
             Skills
@@ -102,7 +110,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

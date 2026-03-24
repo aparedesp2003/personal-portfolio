@@ -10,6 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 90px;
+}
+
 body {
   background-color: #0b1120;
   color: #f8fafc;

@@ -1,10 +1,17 @@
 import resumeFile from "../assets/Andres_Paredes_BMO_Full_Stack_Engineer_Resume.pdf";
 import { FaFileAlt, FaDownload, FaEye } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Resume = () => {
   return (
-    <section id="resume" className="px-6 py-28">
-      <div className="mx-auto max-w-5xl">
+    <section id="resume" className="px-6 py-20 md:py-28">
+      <motion.div
+        className="mx-auto max-w-6xl"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="mb-16 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-sky-400">
             Resume
@@ -53,7 +60,7 @@ const Resume = () => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
