@@ -1,10 +1,10 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-import weatherImage from "../assets/BackEnd-Developer-2.jpg";
-import cultureCompassImage from "../assets/GradutionPicture.jpg";
-import twenituImage from "../assets/ProgrammingLanguages Picture.png";
-import portfolioImage from "../assets/WebDesign-Image.jpeg";
+import weatherImage from "../assets/SkyPulse2.0.png";
+import cultureCompassImage from "../assets/CultureCompass.png";
+import twenituImage from "../assets/TwenituImage.png";
+import portfolioImage from "../assets/PersonalPortfolio.png";
 
 const projects = [
   {
@@ -13,8 +13,8 @@ const projects = [
       "A responsive weather application that allows users to search cities, view current weather conditions, check a 5-day forecast, and use geolocation for local weather updates.",
     image: weatherImage,
     tech: ["React", "Vite", "Tailwind CSS", "OpenWeather API"],
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://weather-website-project-4hcx.vercel.app/",
+    githubLink: "https://github.com/aparedesp2003/Weather-Website-Project",
   },
   {
     title: "CultureCompass",
@@ -22,8 +22,8 @@ const projects = [
       "An interactive multicultural learning platform designed to help users explore different countries through engaging content and quizzes.",
     image: cultureCompassImage,
     tech: ["React", "JavaScript", "CSS", "MongoDB"],
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://comp231-001-team5-w24.onrender.com/",
+    githubLink: "https://github.com/GhostDevelopment69/COMP231-001-Team5-W24",
   },
   {
     title: "Twenitú",
@@ -31,8 +31,7 @@ const projects = [
       "A modern business website showcasing digital construction and design services through a polished and visually engaging interface.",
     image: twenituImage,
     tech: ["React", "CSS", "JavaScript"],
-    liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/aparedesp2003/Project_Twenitu",
   },
   {
     title: "Portfolio Website",
@@ -41,7 +40,7 @@ const projects = [
     image: portfolioImage,
     tech: ["React", "Vite", "Tailwind CSS"],
     liveLink: "#",
-    githubLink: "#",
+    githubLink: "https://github.com/aparedesp2003/personal-portfolio",
   },
 ];
 
@@ -70,11 +69,11 @@ const Projects = () => {
               key={project.title}
               className="flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-lg transition duration-300 hover:-translate-y-2 hover:border-sky-400/30"
             >
-              <div className="relative">
+              <div className="h-56 w-full overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-56 w-full object-cover"
+                  className="h-full w-full object-cover object-top transition duration-500 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/20 opacity-0 transition hover:opacity-100"></div>
               </div>
