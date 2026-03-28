@@ -1,4 +1,4 @@
-import resumeFile from "../assets/Andres_Paredes_BMO_Full_Stack_Engineer_Resume.pdf";
+import resumeFile from "../assets/00.Andres Paredes - Full_Stack_Developer.pdf";
 import { FaFileAlt, FaDownload, FaEye } from "react-icons/fa";
 import { motion } from "framer-motion";
 
