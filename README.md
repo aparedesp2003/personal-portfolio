@@ -14,3 +14,34 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+# Personal Portfolio – Andres Paredes
+
+This is my personal developer portfolio built to showcase my projects, technical skills, and experience as a Software Developer.
+
+# Live Website
+https://your-portfolio-link.vercel.app/
+
+# Built With
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
+
+## Features
+- Responsive design
+- Animated sections
+- Project showcase with live demos
+- Resume download
+- Contact section
+- Modern UI/UX design
+
+### Projects Featured
+- Weather App – React weather application using OpenWeather API
+- CultureCompass – Multicultural learning platform
+- Twenitú – Business website for digital construction services
+- Portfolio Website – Personal portfolio
+
+#### Author
+Andres Paredes

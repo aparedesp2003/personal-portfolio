@@ -22,8 +22,8 @@ const projects = [
       "An interactive multicultural learning platform designed to help users explore different countries through engaging content and quizzes.",
     image: cultureCompassImage,
     tech: ["React", "JavaScript", "CSS", "MongoDB"],
-    liveLink: "https://comp231-001-team5-w24.onrender.com/",
-    githubLink: "https://github.com/GhostDevelopment69/COMP231-001-Team5-W24",
+    liveLink: "https://culturecompass-tau.vercel.app/",
+    githubLink: "https://github.com/aparedesp2003/CultureCompass-Website",
   },
   {
     title: "Twenitú",
