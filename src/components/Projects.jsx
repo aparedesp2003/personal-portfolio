@@ -1,10 +1,11 @@
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+﻿import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 import weatherImage from "../assets/SkyPulse2.0.png";
 import cultureCompassImage from "../assets/CultureCompass.png";
 import twenituImage from "../assets/TwenituImage.png";
 import portfolioImage from "../assets/PersonalPortfolio.png";
+import taskFlowImage from "../assets/landing-page.png";
 
 const projects = [
   {
@@ -26,7 +27,7 @@ const projects = [
     githubLink: "https://github.com/aparedesp2003/CultureCompass-Website",
   },
   {
-    title: "Twenitú",
+    title: "Twenitu",
     description:
       "A modern business website showcasing digital construction and design services through a polished and visually engaging interface.",
     image: twenituImage,
@@ -39,8 +40,24 @@ const projects = [
       "A personal developer portfolio built to showcase projects, technical skills, and contact information in a modern one-page experience.",
     image: portfolioImage,
     tech: ["React", "Vite", "Tailwind CSS"],
-    liveLink: "https://personal-portfolio-black-rho-43.vercel.app/",
+    liveLink: "https://andresparedesp.dev/",
     githubLink: "https://github.com/aparedesp2003/personal-portfolio",
+  },
+  {
+    title: "TaskFlow",
+    description:
+      "A full-stack project and task management dashboard where users can create projects, organize tasks across workflow stages, track progress, and collaborate through shared project access.",
+    image: taskFlowImage,
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "React",
+      "Vercel",
+    ],
+    liveLink: "https://taskflow-kappa-six.vercel.app/",
+    githubLink: "https://github.com/aparedesp2003/Taskflow",
   },
 ];
 
@@ -59,7 +76,7 @@ const Projects = () => {
             Projects
           </p>
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            A selection of projects I’ve built and worked on.
+            A selection of projects that I've built and worked on.
           </h2>
         </div>
 
@@ -70,11 +87,19 @@ const Projects = () => {
               className="flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-lg transition duration-300 hover:-translate-y-2 hover:border-sky-400/30"
             >
               <div className="relative h-56 w-full overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="h-full w-full object-cover object-top transition duration-500 hover:scale-110"
-                />
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="h-full w-full object-cover object-top transition duration-500 hover:scale-110"
+                  />
+                ) : (
+                  <div className="flex h-full w-full items-center justify-center bg-linear-to-br from-sky-900/60 via-slate-800 to-slate-900">
+                    <span className="text-2xl font-bold tracking-wide text-sky-300/70">
+                      {project.title}
+                    </span>
+                  </div>
+                )}
                 <div className="pointer-events-none absolute inset-0 bg-black/20 opacity-0 transition hover:opacity-100"></div>
               </div>
 

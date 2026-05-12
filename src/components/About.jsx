@@ -3,11 +3,13 @@ import { motion } from "framer-motion";
 
 const techStack = [
   "React",
+  "TypeScript",
   "JavaScript",
   "HTML",
   "CSS",
   "Tailwind CSS",
   "Node.js",
+  "Next.js",
   "Express",
   "MongoDB",
   "Git",
@@ -46,19 +48,19 @@ const About = () => {
 
           <div>
             <p className="mb-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-              I’m Andres Paredes, a Software Developer with a strong interest in
-              front-end and full-stack development. I enjoy building responsive,
-              user-focused applications that combine clean design with practical
-              functionality. My goal is to create digital experiences that are
-              modern, intuitive, and useful in real-world scenarios.
+              I'm Andres Paredes, a Software Developer with a focus on front-end
+              and full-stack development. I build responsive, user-focused
+              applications that bring together clean design and practical
+              functionality — with an eye toward experiences that feel modern,
+              intuitive, and genuinely useful.
             </p>
 
             <p className="mb-10 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-              I have worked on projects involving React, JavaScript, APIs,
-              responsive design, and modern UI development. I’m continuously
-              improving my skills by building projects that strengthen both my
-              technical foundation and my ability to deliver polished user
-              experiences.
+              My work spans React, TypeScript, Next.js, and Tailwind CSS, with
+              hands-on experience integrating APIs and building end-to-end
+              features. I'm constantly sharpening my skills through side
+              projects that push both my technical depth and my ability to ship
+              polished, production-ready UIs.
             </p>
 
             <div>

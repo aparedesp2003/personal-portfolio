@@ -19,6 +19,11 @@ import {
   SiDotnet,
   SiMysql,
   SiPostman,
+  SiNextdotjs,
+  SiTypescript,
+  SiSupabase,
+  SiPostgresql,
+  SiVercel,
 } from "react-icons/si";
 
 import { motion } from "framer-motion";
@@ -28,6 +33,8 @@ const skillCategories = [
     title: "Frontend",
     skills: [
       { name: "React", icon: <FaReact /> },
+      { name: "Next.js", icon: <SiNextdotjs /> },
+      { name: "TypeScript", icon: <SiTypescript /> },
       { name: "JavaScript", icon: <FaJs /> },
       { name: "HTML5", icon: <FaHtml5 /> },
       { name: "CSS3", icon: <FaCss3Alt /> },
@@ -40,6 +47,7 @@ const skillCategories = [
     skills: [
       { name: "Node.js", icon: <FaNodeJs /> },
       { name: "Express.js", icon: <SiExpress /> },
+      { name: "Supabase", icon: <SiSupabase /> },
       { name: "C#", icon: <SiDotnet /> },
       { name: "ASP.NET", icon: <SiDotnet /> },
       { name: "Java", icon: <FaJava /> },
@@ -50,6 +58,7 @@ const skillCategories = [
     title: "Databases",
     skills: [
       { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "PostgreSQL", icon: <SiPostgresql /> },
       { name: "SQL", icon: <FaDatabase /> },
       { name: "MySQL", icon: <SiMysql /> },
       { name: "Oracle SQL / PL-SQL", icon: <FaDatabase /> },
@@ -60,6 +69,7 @@ const skillCategories = [
     skills: [
       { name: "Git", icon: <FaGitAlt /> },
       { name: "GitHub", icon: <FaGithub /> },
+      { name: "Vercel", icon: <SiVercel /> },
       { name: "Postman", icon: <SiPostman /> },
     ],
   },
