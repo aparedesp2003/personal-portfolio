@@ -2,10 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section
-      id="hero"
-      className="px-6 pt-28 pb-20 md:pt-36 md:pb-28"
-    >
+    <section id="hero" className="px-6 pt-28 pb-20 md:pt-36 md:pb-28">
       <div className="mx-auto max-w-4xl text-center">
         <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-sky-400">
           Software Developer

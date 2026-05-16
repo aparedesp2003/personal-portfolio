@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import {
   FaReact,
   FaJs,
@@ -25,8 +27,6 @@ import {
   SiPostgresql,
   SiVercel,
 } from "react-icons/si";
-
-import { motion } from "framer-motion";
 
 const skillCategories = [
   {
