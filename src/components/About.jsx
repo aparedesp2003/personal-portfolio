@@ -41,7 +41,7 @@ const About = () => {
               <img
                 src={profileImage}
                 alt="Andres Paredes"
-                className="h-[420px] w-[320px] rounded-2xl object-cover transition duration-300 hover:scale-105"
+                className="h-105 w-[320px] rounded-2xl object-cover transition duration-300 hover:scale-105"
               />
             </div>
           </div>

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import weatherImage from "../assets/SkyPulse2.0.png";
 import cultureCompassImage from "../assets/CultureCompass.png";
 import twenituImage from "../assets/TwenituImage.png";
-import portfolioImage from "../assets/PersonalPortfolio.png";
 import taskFlowImage from "../assets/landing-page.png";
 
 const projects = [
@@ -27,23 +26,6 @@ const projects = [
     githubLink: "https://github.com/aparedesp2003/CultureCompass-Website",
   },
   {
-    title: "Twenitu",
-    description:
-      "A modern business website showcasing digital construction and design services through a polished and visually engaging interface.",
-    image: twenituImage,
-    tech: ["React", "CSS", "JavaScript"],
-    githubLink: "https://github.com/aparedesp2003/Project_Twenitu",
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "A personal developer portfolio built to showcase projects, technical skills, and contact information in a modern one-page experience.",
-    image: portfolioImage,
-    tech: ["React", "Vite", "Tailwind CSS"],
-    liveLink: "https://andresparedesp.dev/",
-    githubLink: "https://github.com/aparedesp2003/personal-portfolio",
-  },
-  {
     title: "TaskFlow",
     description:
       "A full-stack project and task management dashboard where users can create projects, organize tasks across workflow stages, track progress, and collaborate through shared project access.",
@@ -58,6 +40,14 @@ const projects = [
     ],
     liveLink: "https://taskflow-kappa-six.vercel.app/",
     githubLink: "https://github.com/aparedesp2003/Taskflow",
+  },
+  {
+    title: "Twenitu",
+    description:
+      "A modern business website showcasing digital construction and design services through a polished and visually engaging interface.",
+    image: twenituImage,
+    tech: ["React", "CSS", "JavaScript"],
+    githubLink: "https://github.com/aparedesp2003/Project_Twenitu",
   },
 ];
 
