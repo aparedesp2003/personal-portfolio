@@ -5,8 +5,29 @@ import weatherImage from "../assets/SkyPulse2.0.png";
 import cultureCompassImage from "../assets/CultureCompass.png";
 import twenituImage from "../assets/TwenituImage.png";
 import taskFlowImage from "../assets/landing-page.png";
+import ninetyImage from "../assets/ninety-home.webp";
 
 const projects = [
+  {
+    title: "Ninety – Champions League Predictor",
+    featured: true,
+    description:
+      "A live UEFA Champions League prediction site. Elo and Poisson models in Python, trained on 2,250+ matches since 2011-12, beat a uniform baseline by 14% on log loss in a walk-forward backtest of 753 unseen matches. A daily GitHub Actions pipeline ingests results, locks predictions before kick-off, runs a 10,000-season Monte Carlo simulation and refreshes the Next.js site on Vercel.",
+    image: ninetyImage,
+    alt: "Ninety home page showing the matchday's closest call with win, draw and loss probabilities",
+    tech: [
+      "Python",
+      "pandas",
+      "scikit-learn",
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "GitHub Actions",
+    ],
+    liveLink: "https://ucl-predictor-red.vercel.app",
+    githubLink: "https://github.com/aparedesp2003/ucl-predictor",
+  },
   {
     title: "Weather App",
     description:
@@ -74,13 +95,24 @@ const Projects = () => {
           {projects.map((project) => (
             <article
               key={project.title}
-              className="flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-lg transition duration-300 hover:-translate-y-2 hover:border-sky-400/30"
+              className={`flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-lg transition duration-300 hover:-translate-y-2 hover:border-sky-400/30 ${
+                project.featured ? "md:col-span-2" : ""
+              }`}
             >
-              <div className="relative h-56 w-full overflow-hidden">
+              <div
+                className={`relative w-full overflow-hidden ${
+                  project.featured ? "h-56 md:h-80 lg:h-96" : "h-56"
+                }`}
+              >
+                {project.featured && (
+                  <span className="absolute top-4 left-4 z-10 rounded-full border border-sky-400/40 bg-slate-950/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-sky-400 backdrop-blur-sm">
+                    Featured
+                  </span>
+                )}
                 {project.image ? (
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={project.alt ?? project.title}
                     className="h-full w-full object-cover object-top transition duration-500 hover:scale-110"
                   />
                 ) : (
