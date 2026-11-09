@@ -1,4 +1,4 @@
-import resumeFile from "../assets/00.Andres Paredes - Full_Stack_Developer.pdf";
+import resumeFile from "../assets/AndresParedes_FullStack_Resume.pdf";
 import { FaFileAlt, FaDownload, FaEye } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -52,7 +52,7 @@ const Resume = () => {
 
             <a
               href={resumeFile}
-              download="Andres-Paredes-Resume.pdf"
+              download="AndresParedes_FullStack_Resume.pdf"
               className="flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 font-semibold text-white transition hover:border-sky-400 hover:text-sky-400"
             >
               <FaDownload />
