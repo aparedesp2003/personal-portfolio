@@ -43,7 +43,7 @@ const Resume = () => {
             <a
               href={resumeFile}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-full bg-sky-400 px-6 py-3 font-semibold text-slate-950 transition hover:scale-105"
             >
               <FaEye />

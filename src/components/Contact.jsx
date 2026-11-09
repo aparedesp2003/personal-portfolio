@@ -39,7 +39,7 @@ const Contact = () => {
           <a
             href="https://www.linkedin.com/in/andresparedesp/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 text-center shadow-lg transition duration-300 hover:-translate-y-2 hover:border-sky-400/30"
           >
             <div className="mb-4 flex justify-center text-3xl text-sky-400">
@@ -52,7 +52,7 @@ const Contact = () => {
           <a
             href="https://github.com/aparedesp2003"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 text-center shadow-lg transition duration-300 hover:-translate-y-2 hover:border-sky-400/30"
           >
             <div className="mb-4 flex justify-center text-3xl text-sky-400">

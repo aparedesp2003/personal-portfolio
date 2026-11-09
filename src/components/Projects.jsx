@@ -150,7 +150,7 @@ const Projects = () => {
                     <a
                       href={project.liveLink}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="flex items-center gap-2 rounded-full bg-sky-400 px-5 py-2.5 font-semibold text-slate-950 transition hover:scale-105"
                     >
                       <FaExternalLinkAlt />
@@ -162,7 +162,7 @@ const Projects = () => {
                     <a
                       href={project.githubLink}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="flex items-center gap-2 rounded-full border border-white/20 px-5 py-2.5 font-semibold text-white transition hover:border-sky-400 hover:text-sky-400"
                     >
                       <FaGithub />
