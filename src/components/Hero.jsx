@@ -22,19 +22,24 @@ const Hero = () => {
           <a
             href="https://github.com/aparedesp2003"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
             className="transition hover:text-sky-400"
           >
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/andresparedesp/"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
             className="transition hover:text-sky-400"
           >
             <FaLinkedin />
           </a>
           <a
-            href="mailto:your-email@gmail.com"
+            href="mailto:aaparedesp@outlook.com"
+            aria-label="Email"
             className="transition hover:text-sky-400"
           >
             <FaEnvelope />
