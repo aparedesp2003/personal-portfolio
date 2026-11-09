@@ -11,6 +11,9 @@ import {
   FaJava,
   FaPython,
   FaDatabase,
+  FaChartBar,
+  FaVial,
+  FaCodeBranch,
 } from "react-icons/fa";
 
 import {
@@ -26,8 +29,26 @@ import {
   SiSupabase,
   SiPostgresql,
   SiVercel,
+  SiPandas,
+  SiNumpy,
+  SiScipy,
+  SiScikitlearn,
+  SiJest,
+  SiTestinglibrary,
+  SiVitest,
+  SiPytest,
+  SiGithubactions,
+  SiDocker,
+  SiSqlalchemy,
+  SiDrizzle,
 } from "react-icons/si";
 
+import { VscAzure, VscAzureDevops } from "react-icons/vsc";
+
+// Categories are ordered so card heights pair up evenly in both the
+// 2-column (md) and 3-column (lg) grids.
+// Fallback icons (no brand icon in react-icons): Power BI -> FaChartBar,
+// Playwright -> FaVial, Neon -> FaDatabase, Alembic -> FaCodeBranch.
 const skillCategories = [
   {
     title: "Frontend",
@@ -43,18 +64,6 @@ const skillCategories = [
     ],
   },
   {
-    title: "Backend",
-    skills: [
-      { name: "Node.js", icon: <FaNodeJs /> },
-      { name: "Express.js", icon: <SiExpress /> },
-      { name: "Supabase", icon: <SiSupabase /> },
-      { name: "C#", icon: <SiDotnet /> },
-      { name: "ASP.NET", icon: <SiDotnet /> },
-      { name: "Java", icon: <FaJava /> },
-      { name: "Python", icon: <FaPython /> },
-    ],
-  },
-  {
     title: "Databases",
     skills: [
       { name: "MongoDB", icon: <SiMongodb /> },
@@ -62,15 +71,55 @@ const skillCategories = [
       { name: "SQL", icon: <FaDatabase /> },
       { name: "MySQL", icon: <SiMysql /> },
       { name: "Oracle SQL / PL-SQL", icon: <FaDatabase /> },
+      { name: "Supabase", icon: <SiSupabase /> },
+      { name: "SQLAlchemy", icon: <SiSqlalchemy /> },
+      { name: "Alembic", icon: <FaCodeBranch /> },
+      { name: "Drizzle ORM", icon: <SiDrizzle /> },
     ],
   },
   {
-    title: "Tools",
+    title: "DevOps & Tools",
     skills: [
       { name: "Git", icon: <FaGitAlt /> },
       { name: "GitHub", icon: <FaGithub /> },
+      { name: "GitHub Actions", icon: <SiGithubactions /> },
+      { name: "Docker", icon: <SiDocker /> },
+      { name: "Azure DevOps", icon: <VscAzureDevops /> },
+      { name: "Azure App Service", icon: <VscAzure /> },
       { name: "Vercel", icon: <SiVercel /> },
+      { name: "Neon", icon: <FaDatabase /> },
       { name: "Postman", icon: <SiPostman /> },
+    ],
+  },
+  {
+    title: "Data & ML",
+    skills: [
+      { name: "Python", icon: <FaPython /> },
+      { name: "pandas", icon: <SiPandas /> },
+      { name: "NumPy", icon: <SiNumpy /> },
+      { name: "SciPy", icon: <SiScipy /> },
+      { name: "scikit-learn", icon: <SiScikitlearn /> },
+      { name: "Power BI", icon: <FaChartBar /> },
+    ],
+  },
+  {
+    title: "Backend",
+    skills: [
+      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Express.js", icon: <SiExpress /> },
+      { name: "C#", icon: <SiDotnet /> },
+      { name: "ASP.NET", icon: <SiDotnet /> },
+      { name: "Java", icon: <FaJava /> },
+    ],
+  },
+  {
+    title: "Testing",
+    skills: [
+      { name: "Jest", icon: <SiJest /> },
+      { name: "React Testing Library", icon: <SiTestinglibrary /> },
+      { name: "Vitest", icon: <SiVitest /> },
+      { name: "Playwright", icon: <FaVial /> },
+      { name: "pytest", icon: <SiPytest /> },
     ],
   },
 ];
@@ -94,7 +143,7 @@ const Skills = () => {
           </h2>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {skillCategories.map((category) => (
             <div
               key={category.title}
