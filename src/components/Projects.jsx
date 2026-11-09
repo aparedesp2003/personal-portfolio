@@ -29,7 +29,7 @@ const projects = [
     githubLink: "https://github.com/aparedesp2003/ucl-predictor",
   },
   {
-    title: "Weather App",
+    title: "SkyPulse",
     description:
       "A responsive weather application that allows users to search cities, view current weather conditions, check a 5-day forecast, and use geolocation for local weather updates.",
     image: weatherImage,
