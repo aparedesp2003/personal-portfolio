@@ -12,8 +12,13 @@ const techStack = [
   "Next.js",
   "Express",
   "MongoDB",
+  "PostgreSQL",
+  "Python",
+  "Vitest",
+  "Playwright",
   "Git",
   "GitHub",
+  "GitHub Actions",
 ];
 
 const About = () => {
@@ -55,12 +60,22 @@ const About = () => {
               intuitive, and genuinely useful.
             </p>
 
-            <p className="mb-10 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
+            <p className="mb-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
               My work spans React, TypeScript, Next.js, and Tailwind CSS, with
               hands-on experience integrating APIs and building end-to-end
               features. I'm constantly sharpening my skills through side
               projects that push both my technical depth and my ability to ship
-              polished, production-ready UIs.
+              polished, production-ready UIs. Most recently I built and shipped
+              Ninety, a live Champions League prediction product backed by a
+              Python modelling pipeline and automated daily deployments.
+            </p>
+
+            <p className="mb-10 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base">
+              <span className="font-semibold text-sky-400">
+                Currently learning:
+              </span>{" "}
+              CS50's Introduction to AI with Python (Harvard/edX) and AWS
+              Certified AI Practitioner – Foundations.
             </p>
 
             <div>
